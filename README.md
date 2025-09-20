@@ -82,7 +82,7 @@ from dishka import Provider, Scope, provide_all
 class SomeProvider(Provider):
     scope = Scope.APP
 
-    provide_all(
+    services = provide_all(
         Service1,
         Service2,
         ...
