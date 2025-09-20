@@ -1,3 +1,13 @@
+[build-system]
+requires = ["hatchling>=1.13"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+sources = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
 [project]
 name = "dishka-presentation"
 version = "0.1.0"
